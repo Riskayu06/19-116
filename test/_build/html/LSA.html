@@ -1,0 +1,1598 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>CRAWLING &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   CRAWLING
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/LSA.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FLSA.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/LSA.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   CRAWLING
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loading-the-dataset">
+   LOADING THE DATASET
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-cleaning-pre-processing">
+   DATA CLEANING &amp; PRE-PROCESSING
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extracting-the-features-and-creating-the-document-term-matrix-dtm">
+   EXTRACTING THE FEATURES AND CREATING THE DOCUMENT-TERM-MATRIX ( DTM )
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-modelling-latent-semantic-analysis-lsa">
+   TOPIC MODELLING Latent Semantic Analysis (LSA)
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>CRAWLING</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   CRAWLING
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loading-the-dataset">
+   LOADING THE DATASET
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-cleaning-pre-processing">
+   DATA CLEANING &amp; PRE-PROCESSING
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extracting-the-features-and-creating-the-document-term-matrix-dtm">
+   EXTRACTING THE FEATURES AND CREATING THE DOCUMENT-TERM-MATRIX ( DTM )
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-modelling-latent-semantic-analysis-lsa">
+   TOPIC MODELLING Latent Semantic Analysis (LSA)
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="crawling">
+<h1>CRAWLING<a class="headerlink" href="#crawling" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span> pip install scrapy
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: scrapy in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (2.6.1)
+Requirement already satisfied: pyOpenSSL&gt;=16.2.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (22.0.0)
+Requirement already satisfied: Twisted&gt;=17.9.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (22.2.0)
+Requirement already satisfied: protego&gt;=0.1.15 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (0.2.1)
+Requirement already satisfied: itemloaders&gt;=1.0.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (1.0.4)
+Requirement already satisfied: service-identity&gt;=16.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (21.1.0)
+Requirement already satisfied: queuelib&gt;=1.4.2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (1.6.2)
+Requirement already satisfied: w3lib&gt;=1.17.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (1.22.0)
+Requirement already satisfied: PyDispatcher&gt;=2.0.5 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (2.0.5)
+Requirement already satisfied: cryptography&gt;=2.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (36.0.2)
+Requirement already satisfied: cssselect&gt;=0.9.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (1.1.0)
+Requirement already satisfied: lxml&gt;=3.5.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (4.8.0)
+Requirement already satisfied: tldextract in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (3.2.0)
+Requirement already satisfied: itemadapter&gt;=0.1.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (0.4.0)
+Requirement already satisfied: parsel&gt;=1.5.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (1.6.0)
+Requirement already satisfied: zope.interface&gt;=4.1.3 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (5.4.0)
+Requirement already satisfied: setuptools in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from scrapy) (47.1.0)
+Requirement already satisfied: cffi&gt;=1.12 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from cryptography&gt;=2.0-&gt;scrapy) (1.15.0)
+Requirement already satisfied: jmespath&gt;=0.9.5 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from itemloaders&gt;=1.0.1-&gt;scrapy) (1.0.0)
+Requirement already satisfied: six&gt;=1.6.0 in c:\users\asus\appdata\roaming\python\python38\site-packages (from parsel&gt;=1.5.0-&gt;scrapy) (1.15.0)
+Requirement already satisfied: pyasn1-modules in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from service-identity&gt;=16.0.0-&gt;scrapy) (0.2.8)
+Requirement already satisfied: pyasn1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from service-identity&gt;=16.0.0-&gt;scrapy) (0.4.8)
+Requirement already satisfied: attrs&gt;=19.1.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from service-identity&gt;=16.0.0-&gt;scrapy) (21.4.0)
+Requirement already satisfied: incremental&gt;=21.3.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from Twisted&gt;=17.9.0-&gt;scrapy) (21.3.0)
+Requirement already satisfied: hyperlink&gt;=17.1.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from Twisted&gt;=17.9.0-&gt;scrapy) (21.0.0)
+Requirement already satisfied: constantly&gt;=15.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from Twisted&gt;=17.9.0-&gt;scrapy) (15.1.0)
+Requirement already satisfied: Automat&gt;=0.8.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from Twisted&gt;=17.9.0-&gt;scrapy) (20.2.0)
+Requirement already satisfied: typing-extensions&gt;=3.6.5 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from Twisted&gt;=17.9.0-&gt;scrapy) (4.1.1)
+Requirement already satisfied: twisted-iocpsupport&lt;2,&gt;=1.0.2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from Twisted&gt;=17.9.0-&gt;scrapy) (1.0.2)
+Requirement already satisfied: requests&gt;=2.1.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from tldextract-&gt;scrapy) (2.27.1)
+Requirement already satisfied: idna in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from tldextract-&gt;scrapy) (3.3)
+Requirement already satisfied: filelock&gt;=3.0.8 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from tldextract-&gt;scrapy) (3.6.0)
+Requirement already satisfied: requests-file&gt;=1.4 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from tldextract-&gt;scrapy) (1.5.1)
+Requirement already satisfied: pycparser in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from cffi&gt;=1.12-&gt;cryptography&gt;=2.0-&gt;scrapy) (2.21)
+Requirement already satisfied: certifi&gt;=2017.4.17 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from requests&gt;=2.1.0-&gt;tldextract-&gt;scrapy) (2021.10.8)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from requests&gt;=2.1.0-&gt;tldextract-&gt;scrapy) (2.0.12)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from requests&gt;=2.1.0-&gt;tldextract-&gt;scrapy) (1.26.8)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scrapy</span>
+
+<span class="k">class</span> <span class="nc">TechnoSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span><span class="s1">&#39;techno&#39;</span>
+    <span class="n">allowed_domains</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sindonews.com&#39;</span><span class="p">]</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;https://nasional.sindonews.com/&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="n">cont</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.homelist-new&#39;</span><span class="p">)</span>
+
+        <span class="c1">#collecting data</span>
+        <span class="n">kat</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.homelist-channel&#39;</span><span class="p">)</span>
+        <span class="n">tgl</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.homelist-date&#39;</span><span class="p">)</span>
+        <span class="n">judul</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.homelist-title&#39;</span><span class="p">)</span>
+        <span class="n">desk</span> <span class="o">=</span> <span class="n">cont</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;.homelist-desc&#39;</span><span class="p">)</span>
+        <span class="n">c</span><span class="o">=</span><span class="mi">0</span>
+        
+        <span class="c1">#combining the results</span>
+        <span class="k">for</span> <span class="n">review</span> <span class="ow">in</span> <span class="n">kat</span><span class="p">:</span>
+            <span class="k">yield</span><span class="p">{</span><span class="s1">&#39;Kategori&#39;</span><span class="p">:</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">review</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;.//text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()),</span>
+                  <span class="s1">&#39;tgl&#39;</span><span class="p">:</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tgl</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;.//text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()),</span>
+                  <span class="s1">&#39;Judul&#39;</span><span class="p">:</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">judul</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;.//text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()),</span>
+                  <span class="s1">&#39;link&#39;</span><span class="p">:</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">judul</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;.//text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()),</span>
+                  <span class="s1">&#39;deskripsi&#39;</span><span class="p">:</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">desk</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;.//text()&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">()),</span>
+                  <span class="p">}</span>
+            <span class="n">c</span><span class="o">=</span><span class="n">c</span><span class="o">+</span><span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span> pip install pandas
+<span class="o">!</span> pip install numpy
+<span class="o">!</span> pip install nltk
+<span class="o">!</span> pip install swifter
+<span class="o">!</span> pip install sastrawi
+<span class="o">!</span> pip install Stemmer
+<span class="o">!</span> pip install sklearn
+<span class="o">!</span> pip install matplotlib
+<span class="o">!</span> pip install seaborn
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pandas in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (1.2.0)
+Requirement already satisfied: pytz&gt;=2017.3 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from pandas) (2020.5)
+Requirement already satisfied: numpy&gt;=1.16.5 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from pandas) (1.19.4)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from pandas) (2.8.1)
+Requirement already satisfied: six&gt;=1.5 in c:\users\asus\appdata\roaming\python\python38\site-packages (from python-dateutil&gt;=2.7.3-&gt;pandas) (1.15.0)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numpy in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (1.19.4)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: nltk in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (3.7)
+Requirement already satisfied: joblib in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nltk) (1.1.0)
+Requirement already satisfied: click in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nltk) (7.1.2)
+Requirement already satisfied: tqdm in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nltk) (4.63.1)
+Requirement already satisfied: regex&gt;=2021.8.3 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nltk) (2022.3.15)
+Requirement already satisfied: colorama in c:\users\asus\appdata\roaming\python\python38\site-packages (from tqdm-&gt;nltk) (0.4.3)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: swifter in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (1.1.2)
+Requirement already satisfied: ipywidgets&gt;=7.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (7.7.0)
+Requirement already satisfied: cloudpickle&gt;=0.2.2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (2.0.0)
+Requirement already satisfied: parso&gt;0.4.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (0.8.3)
+Requirement already satisfied: pandas&gt;=1.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (1.2.0)
+Requirement already satisfied: psutil&gt;=5.6.6 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (5.9.0)
+Requirement already satisfied: bleach&gt;=3.1.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (4.1.0)
+Requirement already satisfied: dask[dataframe]&gt;=2.10.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (2022.3.0)
+Requirement already satisfied: tqdm&gt;=4.33.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from swifter) (4.63.1)
+Requirement already satisfied: packaging in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from bleach&gt;=3.1.1-&gt;swifter) (21.3)
+Requirement already satisfied: six&gt;=1.9.0 in c:\users\asus\appdata\roaming\python\python38\site-packages (from bleach&gt;=3.1.1-&gt;swifter) (1.15.0)
+Requirement already satisfied: webencodings in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from bleach&gt;=3.1.1-&gt;swifter) (0.5.1)
+Requirement already satisfied: pyyaml&gt;=5.3.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (6.0)
+Requirement already satisfied: toolz&gt;=0.8.2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (0.11.2)
+Requirement already satisfied: partd&gt;=0.3.10 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.2.0)
+Requirement already satisfied: fsspec&gt;=0.6.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (2022.2.0)
+Requirement already satisfied: numpy&gt;=1.18 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from dask[dataframe]&gt;=2.10.0-&gt;swifter) (1.19.4)
+Requirement already satisfied: ipython&gt;=4.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (8.1.1)
+Requirement already satisfied: jupyterlab-widgets&gt;=1.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (1.1.0)
+Requirement already satisfied: ipykernel&gt;=4.5.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (6.9.1)
+Requirement already satisfied: nbformat&gt;=4.2.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (5.4.0)
+Requirement already satisfied: traitlets&gt;=4.3.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (5.1.1)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (3.6.0)
+Requirement already satisfied: ipython-genutils~=0.2.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from pandas&gt;=1.0.0-&gt;swifter) (2.8.1)
+Requirement already satisfied: pytz&gt;=2017.3 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from pandas&gt;=1.0.0-&gt;swifter) (2020.5)
+Requirement already satisfied: colorama in c:\users\asus\appdata\roaming\python\python38\site-packages (from tqdm&gt;=4.33.0-&gt;swifter) (0.4.3)
+Requirement already satisfied: tornado&lt;7.0,&gt;=4.2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.1)
+Requirement already satisfied: jupyter-client&lt;8.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (7.1.2)
+Requirement already satisfied: debugpy&lt;2.0,&gt;=1.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.5.1)
+Requirement already satisfied: nest-asyncio in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.5.4)
+Requirement already satisfied: matplotlib-inline&lt;0.2.0,&gt;=0.1.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.1.3)
+Requirement already satisfied: setuptools&gt;=18.5 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (47.1.0)
+Requirement already satisfied: pygments&gt;=2.4.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.11.2)
+Requirement already satisfied: pickleshare in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.5)
+Requirement already satisfied: decorator in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (5.1.1)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.0.28)
+Requirement already satisfied: jedi&gt;=0.16 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.18.1)
+Requirement already satisfied: stack-data in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
+Requirement already satisfied: backcall in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.0)
+Requirement already satisfied: jsonschema&gt;=2.6 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.2.0)
+Requirement already satisfied: jupyter-core in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.9.2)
+Requirement already satisfied: fastjsonschema in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbformat&gt;=4.2.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.15.3)
+Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from packaging-&gt;bleach&gt;=3.1.1-&gt;swifter) (2.4.7)
+Requirement already satisfied: locket in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from partd&gt;=0.3.10-&gt;dask[dataframe]&gt;=2.10.0-&gt;swifter) (0.2.1)
+Requirement already satisfied: notebook&gt;=4.4.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.4.8)
+Requirement already satisfied: attrs&gt;=17.4.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from jsonschema&gt;=2.6-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (21.4.0)
+Requirement already satisfied: pyrsistent&gt;=0.14.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from jsonschema&gt;=2.6-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.18.1)
+Requirement already satisfied: entrypoints in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from jupyter-client&lt;8.0-&gt;ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.4)
+Requirement already satisfied: pyzmq&gt;=13 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from jupyter-client&lt;8.0-&gt;ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (22.3.0)
+Requirement already satisfied: pywin32&gt;=1.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from jupyter-core-&gt;nbformat&gt;=4.2.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (303)
+Requirement already satisfied: Send2Trash&gt;=1.8.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.8.0)
+Requirement already satisfied: argon2-cffi in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (21.3.0)
+Requirement already satisfied: prometheus-client in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.13.1)
+Requirement already satisfied: jinja2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (3.0.3)
+Requirement already satisfied: terminado&gt;=0.8.3 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.9.5)
+Requirement already satisfied: nbconvert in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (6.5.0)
+Requirement already satisfied: wcwidth in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.5)
+Requirement already satisfied: pure-eval in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from stack-data-&gt;ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.2.2)
+Requirement already satisfied: executing in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from stack-data-&gt;ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.8.3)
+Requirement already satisfied: asttokens in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from stack-data-&gt;ipython&gt;=4.0.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.0.5)
+Requirement already satisfied: pywinpty&lt;1,&gt;=0.5 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from terminado&gt;=0.8.3-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.5.7)
+Requirement already satisfied: argon2-cffi-bindings in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from argon2-cffi-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (21.2.0)
+Requirement already satisfied: MarkupSafe&gt;=2.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from jinja2-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.1.0)
+Requirement already satisfied: beautifulsoup4 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (4.11.1)
+Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.8.4)
+Requirement already satisfied: jupyterlab-pygments in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.1.2)
+Requirement already satisfied: tinycss2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.1.1)
+Requirement already satisfied: defusedxml in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.7.1)
+Requirement already satisfied: nbclient&gt;=0.5.0 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (0.5.12)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.5.0)
+Requirement already satisfied: cffi&gt;=1.0.1 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from argon2-cffi-bindings-&gt;argon2-cffi-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (1.15.0)
+Requirement already satisfied: soupsieve&gt;1.2 in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from beautifulsoup4-&gt;nbconvert-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.3.2.post1)
+Requirement already satisfied: pycparser in c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages (from cffi&gt;=1.0.1-&gt;argon2-cffi-bindings-&gt;argon2-cffi-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.0.0-&gt;swifter) (2.21)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x044F43B8&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/sastrawi/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x044F4670&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/sastrawi/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x044F4748&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/sastrawi/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x044F4820&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/sastrawi/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x044F48F8&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/sastrawi/
+ERROR: Could not find a version that satisfies the requirement sastrawi (from versions: none)
+ERROR: No matching distribution found for sastrawi
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>^C
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x0484FFE8&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/stemmer/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x04854100&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/stemmer/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x048545C8&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/stemmer/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x04854790&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/stemmer/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by &#39;NewConnectionError(&#39;&lt;pip._vendor.urllib3.connection.HTTPSConnection object at 0x04854868&gt;: Failed to establish a new connection: [Errno 11001] getaddrinfo failed&#39;)&#39;: /simple/stemmer/
+ERROR: Could not find a version that satisfies the requirement Stemmer (from versions: none)
+ERROR: No matching distribution found for Stemmer
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+WARNING: Ignoring invalid distribution -ip (c:\users\asus\appdata\local\programs\python\python38-32\lib\site-packages)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="kn">import</span> <span class="nn">nltk</span>
+ <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Unzipping corpora/stopwords.zip.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># data visualisation and manipulation</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">style</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="c1">#configure</span>
+<span class="c1"># sets matplotlib to inline and displays graphs below the corressponding cell.</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline  
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">&#39;whitegrid&#39;</span><span class="p">,</span><span class="n">color_codes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">#import nltk</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span><span class="p">,</span><span class="n">sent_tokenize</span>
+
+<span class="c1">#preprocessing</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>  <span class="c1">#stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">word_tokenize</span><span class="p">,</span><span class="n">sent_tokenize</span> <span class="c1"># tokenizing</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">PorterStemmer</span><span class="p">,</span><span class="n">LancasterStemmer</span>  <span class="c1"># using the Porter Stemmer and Lancaster Stemmer and others</span>
+<span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="kn">import</span> <span class="n">SnowballStemmer</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>  <span class="c1"># lammatizer from WordNet</span>
+<span class="c1"># for named entity recognition (NER)</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">ne_chunk</span>
+
+<span class="c1"># vectorizers for creating the document-term-matrix (DTM)</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span><span class="p">,</span><span class="n">CountVectorizer</span>
+
+<span class="c1">#stop-words</span>
+<span class="n">stop_words</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="loading-the-dataset">
+<h1>LOADING THE DATASET<a class="headerlink" href="#loading-the-dataset" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;techno.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>nama</th>
+      <th>tanggal</th>
+      <th>deskripsi</th>
+      <th>kategori</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Banjir Bandang di Kutai Timur Meluas, 15.000 J...</td>
+      <td>Minggu, 20 Maret 2022 - 21:54 WIB</td>
+      <td>Ratusan rumah di Sanggata, Kutai Timur, Kalima...</td>
+      <td>Nusantara</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Tak Kebagian Bus, Penonton MotoGP Tertinggal d...</td>
+      <td>Minggu, 20 Maret 2022 - 21:50 WIB</td>
+      <td>Para penonton MotoGP di Mandalika yang awalnya...</td>
+      <td>Nusantara</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Pro Kontra Daerah Otonomi Baru, Masyarakat Ada...</td>
+      <td>Minggu, 20 Maret 2022 - 21:39 WIB</td>
+      <td>Setelah beberapa wilayah adat La Pago menolak ...</td>
+      <td>Nusantara</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pulihkan Pariwisata, Denpasar Gratiskan Dokar ...</td>
+      <td>Minggu, 20 Maret 2022 - 21:35 WIB</td>
+      <td>Bali terus melakukan upaya untuk memulihkan pa...</td>
+      <td>Nusantara</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Puncak HUT, Bupati Tulang Bawang Winarti Resmi...</td>
+      <td>Minggu, 20 Maret 2022 - 21:07 WIB</td>
+      <td>Pada perhelatan Puncak Acara HUT Kabupaten Tul...</td>
+      <td>Sponsored</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop the nama.</span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;nama&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop the tanggal.</span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;tanggal&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop the kategori.</span>
+<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;kategori&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ratusan rumah di Sanggata, Kutai Timur, Kalima...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Para penonton MotoGP di Mandalika yang awalnya...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Setelah beberapa wilayah adat La Pago menolak ...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bali terus melakukan upaya untuk memulihkan pa...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Pada perhelatan Puncak Acara HUT Kabupaten Tul...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Indonesia International Taekwon Do Federation ...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Indonesia International Taekwon Do Federation ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Kapolres Malang AKBP Ferli Hidayat terus berup...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Seorang remaja perempuan berjilbab yang diduga...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Hujan deras disertai angin kencang mengakibatk...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-cleaning-pre-processing">
+<h1>DATA CLEANING &amp; PRE-PROCESSING<a class="headerlink" href="#data-cleaning-pre-processing" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">clean_text</span><span class="p">(</span><span class="n">deskripsi</span><span class="p">):</span>
+  <span class="n">le</span><span class="o">=</span><span class="n">WordNetLemmatizer</span><span class="p">()</span>
+  <span class="n">word_tokens</span><span class="o">=</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">deskripsi</span><span class="p">)</span>
+  <span class="n">tokens</span><span class="o">=</span><span class="p">[</span><span class="n">le</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">word_tokens</span> <span class="k">if</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">]</span>
+  <span class="n">cleaned_text</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">cleaned_text</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># time taking</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;deskripsi_text&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;deskripsi&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>deskripsi</th>
+      <th>deskripsi_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ratusan rumah di Sanggata, Kutai Timur, Kalima...</td>
+      <td>Ratusan rumah Sanggata Kutai Timur Kalimantan ...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Para penonton MotoGP di Mandalika yang awalnya...</td>
+      <td>Para penonton MotoGP Mandalika yang awalnya ke...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Setelah beberapa wilayah adat La Pago menolak ...</td>
+      <td>Setelah beberapa wilayah adat Pago menolak kin...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bali terus melakukan upaya untuk memulihkan pa...</td>
+      <td>Bali terus melakukan upaya untuk memulihkan pa...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Pada perhelatan Puncak Acara HUT Kabupaten Tul...</td>
+      <td>Pada perhelatan Puncak Acara Kabupaten Tulang ...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;deskripsi_text&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Ratusan rumah di Sanggata, Kutai Timur, Kalima...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Para penonton MotoGP di Mandalika yang awalnya...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Setelah beberapa wilayah adat La Pago menolak ...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bali terus melakukan upaya untuk memulihkan pa...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Pada perhelatan Puncak Acara HUT Kabupaten Tul...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;deskripsi&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Ratusan rumah di Sanggata, Kutai Timur, Kalimantan Timur terendam banjir hingga kedalaman setengah meter dan menyebabkan warga kesulitan beraktivitas.&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="extracting-the-features-and-creating-the-document-term-matrix-dtm">
+<h1>EXTRACTING THE FEATURES AND CREATING THE DOCUMENT-TERM-MATRIX ( DTM )<a class="headerlink" href="#extracting-the-features-and-creating-the-document-term-matrix-dtm" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vect</span> <span class="o">=</span><span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="n">stop_words</span><span class="p">,</span><span class="n">max_features</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vect_text</span><span class="o">=</span><span class="n">vect</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;deskripsi&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">vect_text</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vect_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(27, 393)
+  (0, 54)	0.2381987790450015
+  (0, 175)	0.2381987790450015
+  (0, 386)	0.16628781911729804
+  (0, 239)	0.21165858334357096
+  (0, 86)	0.132851126901508
+  (0, 243)	0.2381987790450015
+  (0, 328)	0.2381987790450015
+  (0, 166)	0.2381987790450015
+  (0, 126)	0.21165858334357096
+  (0, 40)	0.21165858334357096
+  (0, 350)	0.2381987790450015
+  (0, 154)	0.2381987790450015
+  (0, 369)	0.476397558090003
+  (0, 186)	0.2381987790450015
+  (0, 310)	0.2381987790450015
+  (0, 94)	0.07833208030007383
+  (0, 305)	0.1782218911277809
+  (0, 301)	0.21165858334357096
+  (1, 36)	0.19817363898526325
+  (1, 379)	0.24480218234663798
+  (1, 163)	0.24480218234663798
+  (1, 266)	0.24480218234663798
+  (1, 64)	0.24480218234663798
+  (1, 333)	0.1831626008535631
+  (1, 58)	0.24480218234663798
+  :	:
+  (25, 239)	0.187305575686449
+  (25, 126)	0.187305575686449
+  (25, 94)	0.06931934988672944
+  (25, 305)	0.1577160415149807
+  (26, 375)	0.23528139867347048
+  (26, 47)	0.23528139867347048
+  (26, 216)	0.23528139867347048
+  (26, 155)	0.23528139867347048
+  (26, 46)	0.23528139867347048
+  (26, 381)	0.23528139867347048
+  (26, 44)	0.23528139867347048
+  (26, 320)	0.23528139867347048
+  (26, 365)	0.23528139867347048
+  (26, 342)	0.23528139867347048
+  (26, 5)	0.23528139867347048
+  (26, 67)	0.23528139867347048
+  (26, 153)	0.23528139867347048
+  (26, 24)	0.2090662585676495
+  (26, 346)	0.2090662585676495
+  (26, 288)	0.2090662585676495
+  (26, 325)	0.19046632065820912
+  (26, 164)	0.2090662585676495
+  (26, 152)	0.19046632065820912
+  (26, 386)	0.1642511805523881
+  (26, 94)	0.0773726947211685
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">idf</span><span class="o">=</span><span class="n">vect</span><span class="o">.</span><span class="n">idf_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dd</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">vect</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">(),</span> <span class="n">idf</span><span class="p">))</span>
+<span class="n">l</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">dd</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+<span class="c1"># print(l)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="p">[</span><span class="s1">&#39;setelah&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="p">[</span><span class="s1">&#39;acara&#39;</span><span class="p">])</span>  <span class="c1"># police is most common and forecast is least common among the news headlines.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>di zainul
+3.6390573296152584
+3.6390573296152584
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="topic-modelling-latent-semantic-analysis-lsa">
+<h1>TOPIC MODELLING Latent Semantic Analysis (LSA)<a class="headerlink" href="#topic-modelling-latent-semantic-analysis-lsa" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">TruncatedSVD</span>
+<span class="n">lsa_model</span> <span class="o">=</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;randomized&#39;</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">lsa_top</span><span class="o">=</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">vect_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lsa_top</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lsa_top</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (no_of_doc*no_of_topics)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 0.17827668  0.16444362  0.03513002  0.20425876 -0.25355449 -0.1119941
+   0.49362253  0.12285648 -0.02200517  0.11271836]
+ [ 0.55210584 -0.34590515 -0.24673958 -0.02254697 -0.17004537 -0.06049983
+   0.04914273 -0.0654532   0.13706473 -0.04697636]
+ [ 0.17477307  0.1813299  -0.04917827 -0.14869329  0.06412035  0.3004274
+   0.19881324  0.18911249  0.43325654 -0.07036787]
+ [ 0.12871282  0.06999455  0.14026957  0.15480653 -0.2304953   0.21874772
+  -0.46327492  0.20987009 -0.17883513  0.19315305]
+ [ 0.16982813  0.31138202 -0.08405119 -0.04722013 -0.27055507 -0.1046518
+  -0.38181804 -0.06103384  0.21666076 -0.02684675]
+ [ 0.24457475 -0.01143844  0.67467228 -0.306168    0.01380625 -0.24411452
+   0.0142407  -0.05732031  0.01580008 -0.05999001]
+ [ 0.32432618 -0.00992885  0.65078222 -0.31399171 -0.06241167 -0.04102204
+  -0.02593243 -0.08429066  0.0775658  -0.08850706]
+ [ 0.16181664 -0.00771368  0.16565851  0.03097217 -0.19286611  0.57882569
+  -0.03389186 -0.19681352  0.1617974  -0.0354692 ]
+ [ 0.20540843  0.21058832  0.14412101  0.42588779  0.06220672 -0.21988923
+  -0.10012355 -0.03758332  0.05454464  0.00144639]
+ [ 0.23333895  0.05602934  0.04213729  0.26300273  0.27956666 -0.03396173
+  -0.05037178  0.18955528  0.11480182  0.13681805]
+ [ 0.2202425   0.07182535  0.07420828  0.03269034 -0.00137177  0.07524169
+   0.25322514  0.54969388  0.12086959 -0.10399009]
+ [ 0.32844107  0.53352192 -0.26694237 -0.29552207  0.06573324 -0.00592668
+   0.06732948 -0.04097819 -0.27046374  0.0181269 ]
+ [ 0.11964723  0.12273114  0.01898651  0.20624466 -0.14110216 -0.01695927
+   0.26760523 -0.02621239 -0.30060037 -0.36864083]
+ [ 0.10550272 -0.03886694  0.11588533  0.09243015 -0.32593932  0.39960798
+  -0.15564222  0.25219278 -0.42664945 -0.05905853]
+ [ 0.10164493  0.06346434  0.02956225  0.10080517  0.02060234 -0.03310067
+  -0.24727447  0.09976816  0.13721704  0.45126872]
+ [ 0.55203801 -0.35764712 -0.24918    -0.02615307 -0.00638196 -0.1095005
+   0.0119244  -0.00928872  0.05830104  0.02747928]
+ [ 0.13596801  0.09464339  0.09707673  0.06107708  0.19338532  0.42461341
+   0.18541222 -0.44373652 -0.04908323  0.01117062]
+ [ 0.30980961  0.57492368 -0.28233048 -0.37844244 -0.05085948 -0.0440744
+  -0.09628248 -0.01174579 -0.08043775 -0.04044531]
+ [ 0.32451238  0.04403331 -0.01475076  0.03994711  0.35554576  0.21894096
+  -0.00105484  0.10961579  0.23329005  0.16660981]
+ [ 0.24981184  0.00316807  0.00152141  0.25785536  0.43307637  0.10635084
+  -0.12955828 -0.27080272 -0.13351139 -0.15612419]
+ [ 0.48110112 -0.22506339 -0.0623      0.01022236  0.24944228 -0.06081227
+  -0.13661644  0.06617106 -0.29004615 -0.08336515]
+ [ 0.2678596  -0.21644279  0.0661184  -0.0978105  -0.14530602 -0.17748417
+   0.08342438 -0.0310417  -0.15719362  0.29804303]
+ [ 0.28911958 -0.36416513 -0.23444531 -0.0311782  -0.31412659  0.05320774
+  -0.01160223 -0.14409019  0.07714731 -0.08936649]
+ [ 0.16636629  0.0338827   0.12354599  0.18866718  0.2310699  -0.07397074
+  -0.03524928  0.26949048 -0.13250569 -0.24802419]
+ [ 0.09114943  0.0755983   0.06803141  0.00720824  0.06182433 -0.0008919
+   0.2631364  -0.16944058 -0.26119575  0.57415364]
+ [ 0.1295055   0.18551136  0.08768446  0.38782204 -0.29900762  0.00753861
+   0.20615651 -0.07455274  0.08568437  0.1223208 ]
+ [ 0.14192336  0.26272578  0.03141199  0.36768134 -0.17442279 -0.25998004
+  -0.12939495 -0.28470781  0.18287098 -0.16822207]]
+(27, 10)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l</span><span class="o">=</span><span class="n">lsa_top</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Document 0 :&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot; : &quot;</span><span class="p">,</span><span class="n">topic</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Document 0 :
+Topic  0  :  17.82766832374236
+Topic  1  :  16.444362488274937
+Topic  2  :  3.513002109980618
+Topic  3  :  20.425875981865758
+Topic  4  :  -25.35544853362419
+Topic  5  :  -11.199410223991109
+Topic  6  :  49.362252987809796
+Topic  7  :  12.285647687952347
+Topic  8  :  -2.200516740432844
+Topic  9  :  11.271835630006418
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">components_</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1"># (no_of_topics*no_of_words)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">components_</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(10, 393)
+[[ 0.04816074  0.04716419  0.07326114 ...  0.07145266  0.20946864
+   0.02516141]
+ [ 0.08609482  0.11664807  0.17210955 ... -0.06195812  0.08889178
+  -0.02721938]
+ [-0.02351955 -0.0529399  -0.08347315 ... -0.04621108 -0.04344811
+   0.00890173]
+ ...
+ [-0.09433628 -0.01180147 -0.0175854  ... -0.00190588  0.06455839
+  -0.0049408 ]
+ [-0.06167605  0.01901508 -0.02933119 ...  0.01366432  0.00401618
+  -0.02693797]
+ [ 0.00679673 -0.01261042 -0.00832885 ...  0.00720567  0.10728007
+   0.05228102]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># most important words for each topic</span>
+<span class="n">vocab</span> <span class="o">=</span> <span class="n">vect</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">comp</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">components_</span><span class="p">):</span>
+    <span class="n">vocab_comp</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">vocab</span><span class="p">,</span> <span class="n">comp</span><span class="p">)</span>
+    <span class="n">sorted_words</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">vocab_comp</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;: &quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">sorted_words</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic 0: 
+di mandalika sirkuit dan yang hujan motogp indonesia penonton pawang 
+
+Topic 1: 
+papua kabupaten 2022 warga baya bersenjata biru distrik kelompok membakar 
+
+Topic 2: 
+indonesia diri federation international itf taekwon terus dari dengan bela 
+
+Topic 3: 
+seorang warga pasar perempuan diduga anak tega kota salah tengah 
+
+Topic 4: 
+hujan tengah yang kini wanita terlihat pasar tidak pawang migor 
+
+Topic 5: 
+masyarakat terus dengan tersebut bahaya akbp berupaya daerah ferli hidayat 
+
+Topic 6: 
+timur rumah banjir hingga menyebabkan warga ratusan beraktivitas kalimantan kedalaman 
+
+Topic 7: 
+hal wilayah banjir itu akibat bersih bolango bone gorontalo ini 
+
+Topic 8: 
+adat kini di wilayah dan masyarakat bakal barat beberapa cikal 
+
+Topic 9: 
+halal padjadjaran ampel sunan surabaya ketua rumah center diselesaikan masih 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">LatentDirichletAllocation</span>
+<span class="n">lda_model</span><span class="o">=</span><span class="n">LatentDirichletAllocation</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">learning_method</span><span class="o">=</span><span class="s1">&#39;online&#39;</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> 
+<span class="c1"># n_components is the number of topics</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lda_top</span><span class="o">=</span><span class="n">lda_model</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">vect_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lda_top</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (no_of_doc,no_of_topics)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lda_top</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(27, 10)
+[[0.01991645 0.01991626 0.01991639 0.82075496 0.01991609 0.01991579
+  0.01991624 0.01991609 0.01991578 0.01991594]
+ [0.01898274 0.82914957 0.01898297 0.01898288 0.01898321 0.01898637
+  0.01898309 0.01898307 0.01898286 0.01898324]
+ [0.01824013 0.01824005 0.01824053 0.01824003 0.01824045 0.01823978
+  0.01824029 0.0182399  0.83583887 0.01823998]
+ [0.01889548 0.01889471 0.01889475 0.01889471 0.01889507 0.01889503
+  0.82994598 0.01889487 0.01889488 0.01889453]
+ [0.84270471 0.01747819 0.01747729 0.01747716 0.01747733 0.01747711
+  0.01747705 0.01747696 0.01747726 0.01747693]
+ [0.82997781 0.01889169 0.01889162 0.01889138 0.01889133 0.01889125
+  0.018891   0.01889113 0.01889147 0.01889131]
+ [0.0198695  0.01986963 0.0198697  0.01986993 0.01987026 0.01986955
+  0.01986952 0.0198694  0.01986921 0.8211733 ]
+ [0.01934933 0.01934918 0.01934898 0.01934922 0.01934919 0.82585827
+  0.01934882 0.01934929 0.019349   0.01934871]
+ [0.01942574 0.01942548 0.82516846 0.01942556 0.01942615 0.01942574
+  0.01942578 0.01942564 0.01942593 0.01942552]
+ [0.01927324 0.01927351 0.01927482 0.01927317 0.01927365 0.01927312
+  0.01927356 0.01927428 0.01927351 0.82653714]
+ [0.82472657 0.01947485 0.019476   0.01947458 0.01947476 0.01947519
+  0.01947457 0.01947423 0.01947467 0.01947459]
+ [0.01662418 0.01662378 0.01662377 0.01662369 0.85038624 0.01662401
+  0.01662346 0.01662357 0.01662387 0.01662343]
+ [0.01704581 0.01704574 0.01704572 0.8465877  0.01704557 0.01704582
+  0.01704584 0.01704625 0.01704574 0.0170458 ]
+ [0.01871515 0.83156256 0.018715   0.01871499 0.01871554 0.01871488
+  0.01871518 0.01871624 0.0187152  0.01871527]
+ [0.01859307 0.01859392 0.01859331 0.01859323 0.01859357 0.01859336
+  0.83266018 0.01859308 0.018593   0.01859328]
+ [0.02000933 0.0200095  0.02000877 0.02000893 0.02000977 0.81991664
+  0.02000919 0.02000899 0.02000914 0.02000974]
+ [0.02028104 0.02028118 0.02028059 0.81747156 0.02028079 0.02028201
+  0.02028063 0.02028062 0.02028041 0.02028116]
+ [0.01722168 0.84500252 0.01722166 0.01722329 0.01722247 0.01722212
+  0.01722148 0.0172214  0.01722179 0.01722159]
+ [0.01864119 0.01864127 0.01864151 0.01864103 0.01864334 0.01864124
+  0.0186411  0.01864112 0.01864105 0.83222715]
+ [0.01929079 0.01929079 0.01929091 0.0192909  0.01929072 0.01929082
+  0.019291   0.01929127 0.01929054 0.82638225]
+ [0.01810432 0.01810432 0.01810373 0.01810389 0.01810463 0.01810398
+  0.01810348 0.01810384 0.01810399 0.83706383]
+ [0.01762942 0.84133382 0.01762953 0.01762969 0.01762961 0.01762945
+  0.01762935 0.01762933 0.01762949 0.01763031]
+ [0.02064414 0.02064395 0.02064412 0.02064357 0.0206441  0.81420396
+  0.02064414 0.02064389 0.02064432 0.02064383]
+ [0.01916505 0.0191652  0.01916471 0.01916491 0.01916535 0.0191692
+  0.01916517 0.01916508 0.82751031 0.01916504]
+ [0.0204412  0.0204413  0.02044102 0.02044097 0.020441   0.02044138
+  0.0204415  0.02044143 0.02044141 0.81602879]
+ [0.01655756 0.01655775 0.85098139 0.01655815 0.01655741 0.01655756
+  0.01655758 0.0165575  0.01655764 0.01655746]
+ [0.01812954 0.01812927 0.01812942 0.83683551 0.01812954 0.01812908
+  0.01812967 0.01812936 0.01812942 0.01812921]]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">sum</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lda_top</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+  <span class="nb">sum</span><span class="o">=</span><span class="nb">sum</span><span class="o">+</span><span class="n">i</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0000000000000002
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># composition of doc 0 for eg</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Document 0: &quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lda_top</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot;: &quot;</span><span class="p">,</span><span class="n">topic</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="s2">&quot;%&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Document 0: 
+Topic  0 :  1.9916451307379586 %
+Topic  1 :  1.991626232042231 %
+Topic  2 :  1.9916393100208152 %
+Topic  3 :  82.07549581560774 %
+Topic  4 :  1.991609423362764 %
+Topic  5 :  1.9915786100045656 %
+Topic  6 :  1.9916244033450665 %
+Topic  7 :  1.9916092420778224 %
+Topic  8 :  1.9915776164659966 %
+Topic  9 :  1.9915942163350586 %
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lda_model</span><span class="o">.</span><span class="n">components_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lda_model</span><span class="o">.</span><span class="n">components_</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (no_of_topics*no_of_words)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.87031103 0.84876837 0.83835315 ... 0.93475491 0.69712398 0.72030291]
+ [0.76777316 0.94598101 0.9718942  ... 0.8165008  0.83891585 0.79355052]
+ [0.72293254 0.70521696 0.77618183 ... 0.83652559 0.87058736 0.88034058]
+ ...
+ [0.9448376  0.78093103 0.74968905 ... 0.89388721 0.77964696 0.89148505]
+ [0.83186524 0.88664002 0.85168555 ... 0.78152503 0.84069983 0.91040302]
+ [0.87008139 0.80023746 0.89104552 ... 0.87373621 0.91251683 0.89827736]]
+(10, 393)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># most important words for each topic</span>
+<span class="n">vocab</span> <span class="o">=</span> <span class="n">vect</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">comp</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lda_model</span><span class="o">.</span><span class="n">components_</span><span class="p">):</span>
+    <span class="n">vocab_comp</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">vocab</span><span class="p">,</span> <span class="n">comp</span><span class="p">)</span>
+    <span class="n">sorted_words</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">vocab_comp</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;: &quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">sorted_words</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic 0: 
+hujan taekwon kabupaten menerjang vaksinasi biru terjadi immunity menganiaya terutama 
+
+Topic 1: 
+hal oiaa motogp immunity menyambut tengah al kegirangan nonton mandalika 
+
+Topic 2: 
+menggegerkan diduga baya kapolres anggota bolango salah dari acara hujan 
+
+Topic 3: 
+menyebabkan pembalap pandemi timur oleh alumni menerjang desa umur cikal 
+
+Topic 4: 
+bersenjata aksi kini papua menggenjot terutama tahun dilancarkan sindangkasih polres 
+
+Topic 5: 
+hidayat bahaya eri pembalap mandalika hingga berprikemanuasian tersendiri ribu menjadi 
+
+Topic 6: 
+zainul tahun pariwisata bali doa rider surabaya dan angin al 
+
+Topic 7: 
+bisa masih universitas deras berupaya harus dalam kapolres desa cukup 
+
+Topic 8: 
+bersenjata adat immunity pasang vaksinasi mendukung terjun padjadjaran muhtadun pemerintahan 
+
+Topic 9: 
+tengah wanita baru seminar seorang padjadjaran hujan heboh seluruh antusias 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
